@@ -3,7 +3,7 @@ title: Thomas Schreck
 email: tom@schreck-thomas.de
 description: > # this means to ignore newlines until "baseurl:"
         It has become appallingly obvious that our technology 
-        has exceeded our humanity. (Albert Einstein)
+        has exceeded our humanity. - Albert Einstein
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://www.schreck-thomas.de" # the base hostname & protocol for your site
 twitter_username: shrekts
