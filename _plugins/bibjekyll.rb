@@ -1,4 +1,4 @@
-# Copyright (c) 2010-2013 Pablo de Oliveira Castro and contributors 
+# Copyright (c) 2010-2016 Pablo de Oliveira Castro and contributors 
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -52,12 +52,10 @@ module Jekyll
       # get the complete paths for the style file and the source file
       stylepath = File.join(context['site']['source'], @style)
 
-      sourcefile = File.join(context['site']['source'], context['page']['url'])
-      bib = File.join(File.dirname(sourcefile), @bibfile)
+      sourcedir = File.join(context['site']['source'], context['page']['dir'])
+      bib = File.join(sourcedir, @bibfile)
 
-      outputfile = File.join(context['site']['destination'], context['page']['url'])
-      outputdir = File.dirname(outputfile)
-
+      outputdir = File.join(context['site']['destination'], context['page']['dir'])
 
       # ensure that the destination directory exists
       FileUtils.mkdir_p(outputdir)
@@ -86,9 +84,8 @@ module Jekyll
               # Read html formatted bib file
               content_bibhtml = IO.read(bibhtml)
               # determine the name of the file we are generating
-              page = File.basename(outputfile)
               # replace links to basename by page
-              content_bibhtml = content_bibhtml.gsub(outname, page)
+              content_bibhtml = content_bibhtml.gsub(outname, context['page']['url'])
               # commit changes
               File.open(bibhtml, 'w') {|f| f.write(content_bibhtml)}
           end
