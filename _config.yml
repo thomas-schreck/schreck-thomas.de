@@ -8,7 +8,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://www.schreck-thomas.de" # the base hostname & protocol for your site
 twitter_username: shrekts
 github_username:  shrekts
-medium: @shrekts
+medium: shrekts
 
 # Build settings
 markdown: kramdown
