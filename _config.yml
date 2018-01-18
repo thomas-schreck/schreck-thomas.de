@@ -6,8 +6,8 @@ description: > # this means to ignore newlines until "baseurl:"
         has exceeded our humanity. - Albert Einstein
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://www.schreck-thomas.de" # the base hostname & protocol for your site
-twitter_username: shrekts
-github_username:  shrekts
+twitter: shrekts
+github:  shrekts
 medium: shrekts
 
 # Build settings
