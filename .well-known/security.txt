@@ -1,2 +1,0 @@
-Contact: mailto:security@schreck-thomas.de
-Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/4B8D566932D527C96107B9D187A22B919D50830E

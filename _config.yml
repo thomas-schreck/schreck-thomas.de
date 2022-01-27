@@ -1,0 +1,8 @@
+title: Thomas Schreck
+email: tom@schreck-thomas.de
+baseurl: "" 
+url: "https://www.schreck-thomas.de"
+
+# Build settings
+theme: minima
+
